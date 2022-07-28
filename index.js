@@ -1,7 +1,8 @@
 // const cTable = require('console.table');
-const inquirer = require('inquirer');
+const {prompt} = require('inquirer');
 const db = require("./db");
 require("console.table");
+init();
 
 function init() {
   console.log("Employees, Departments, and Roles Interface")
@@ -51,6 +52,8 @@ function loadPrompts() {
       case "VIEW_EMPLOYEES":
         viewEmployees();
         break;
+      case "ADD_EMPLOYEE":
+
     }
   })
 }
